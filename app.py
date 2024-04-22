@@ -1,16 +1,16 @@
 import streamlit as st
 
 st.set_page_config(
-    page_icon=":material-outlined/flag:",
+    page_icon=":material/flag:",
 )
 
 
 st.subheader("Demo app for non emoji icons")
 
-with st.chat_message("user", avatar=":material/AddCircle:"):
+with st.chat_message("user", avatar=":material/add_circle:"):
     st.write("Hello from USER 👋")
 
-with st.chat_message("ai", avatar=":material/DirectionsBike:"):
+with st.chat_message("ai", avatar=":material/directions_bike:"):
     st.write("Hello from AI 👋")
 
 with st.chat_message("ai"):
@@ -26,7 +26,7 @@ with st.chat_message("user", avatar="💚"):
     st.write("Hello from USER 👋")
 
 st.success("This is a success message", icon=":material/usb:")
-st.warning("This is a warning message", icon=":material-outlined/AdminPanelSettings:")
+st.warning("This is a warning message", icon=":material/admin_panel_settings:")
 st.info("This is a purely informational message", icon="ℹ️")
 
 
@@ -34,7 +34,5 @@ my_button = st.button("Show toast with custom icon")
 if my_button:
     st.toast("Your edited image was saved!" * 10, icon="😍")
     st.toast("Your edited image was saved!" * 10, icon="🦄")
-    st.toast("Your edited image was saved!" * 10, icon=":material-rounded/add_a_photo:")
-    st.toast(
-        "Your edited image was saved!" * 10, icon=":material-outlined/local_shipping:"
-    )
+    st.toast("Your edited image was saved!" * 10, icon=":material/add_a_photo:")
+    st.toast("Your edited image was saved!" * 10, icon=":material/local_shipping:")
